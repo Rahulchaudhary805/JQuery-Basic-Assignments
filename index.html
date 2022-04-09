@@ -4,43 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Validation</title>
+    <title>JQuery Basic Assignments</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </head>
 
 <body>
-    <table >
-        <tr>
-            <td>
-                Password:<br><input type="password" id="txtPassword" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Confirm Password:<br><input type="password" id="txtConfirmPassword" />
-            </td>
-        </tr>
-        <tr>
-            <td id="demo" style="color: red;"></td>
-        </tr>
-        <tr>
-            <td>
-                <input type="button" id="btnSubmit" value="Submit" />
-            </td>
-        </tr>
-    </table>
-    <script type="text/javascript">
-        $(function () {
-            $("#btnSubmit").click(function () {
-                var password = $("#txtPassword").val();
-                var confirmPassword = $("#txtConfirmPassword").val();
-                if (password != confirmPassword) {
-                    document.getElementById("demo").innerHTML = "Password didn't match";
-                    return false;
-                }
-                return true;
+    <script type="text/javascript">  
+        $(document).ready(function() {  
+            $("#btn1").click(function() {
+                $('tr:even').css('background-Color', 'lightgray');
             });
-        });
+            
+            $("#btn2").click(function() {
+                $('tr:odd').css('background-Color', 'dodgerblue');
+            });  
+              
+        });  
     </script>
+
+    <span><button id="btn1">Color Even Rows</button>
+    <button id="btn2">Color Odd Rows</button>
+    <br>
+    <br>
+
+<table id="table1" border="1">  
+    <tr>  
+        <th>Company</th>  
+        <th>Contact</th>  
+        <th>Country</th>  
+    </tr>  
+    <tr>  
+        <td>.NET</td>  
+        <td>jQuery</td>  
+        <td>JavaS</td>  
+    </tr>  
+    <tr>  
+        <td>AJAX</td>  
+        <td>CSS</td>  
+        <td>HTML</td>  
+    </tr>  
+    <tr>  
+        <td>VB</td>  
+        <td>Dot NET</td>  
+        <td>Visual</td>  
+    </tr>  
+    <tr>  
+        <td>Oracle</td>  
+        <td>Java</td>  
+        <td>J2EE</td>  
+    </tr>  
+
+    <tr>  
+        <td>M1</td>  
+        <td>M2</td>  
+        <td>M3</td>  
+    </tr>  
+    <tr>  
+        <td>N1</td>  
+        <td>N2</td>  
+        <td>N3</td>  
+    </tr>  
+    <tr>  
+        <td>O1</td>  
+        <td>O2</td>  
+        <td>O3</td>  
+    </tr>  
+    <tr>  
+        <td>P1</td>  
+        <td>P2</td>  
+        <td>P3</td>  
+    </tr>  
+    <tr>  
+        <td>Q1</td>  
+        <td>Q2</td>  
+        <td>Q3</td>  
+    </tr>
+
+
+</table>  
 </body>
 </html>
